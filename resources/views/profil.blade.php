@@ -1,0 +1,1 @@
+halo {{$data['nama']}} {{$data['umur']}}
