@@ -1,1 +1,5 @@
-halo {{$data['nama']}} {{$data['umur']}}
+@extends ('master')
+
+@section ('konten')
+	halo {!!$nama!!} {{$umur}} 
+@stop

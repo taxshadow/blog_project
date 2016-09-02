@@ -13,3 +13,5 @@
 
 Route::get('/', 'WelcomeController@index');
 Route::get('/profil', 'ProfilController@index');
+Route::get('/Materi', 'MateriController@show');
+Route::get('/Materi/{id}', 'MateriController@single');

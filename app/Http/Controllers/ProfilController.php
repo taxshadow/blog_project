@@ -28,8 +28,14 @@ class ProfilController extends Controller
 
     //step3
 
-    $nama ="Nama saya iman";
+    $nama ="<strong>Nama saya iman</strong>";
     $umur ="umur 20tahun";
-    return view('profil')->with('data', compact('nama', 'umur'));
+    return view('profil', compact('nama', 'umur'));
+    }
+
+    public function materi(){
+
+        $datas =['html', 'css', 'js'];
+        return view('materi')->with('datas', $datas);
     }
 }
